@@ -67,7 +67,7 @@ write.csv(potential_school_list, file = "potential_school_list.csv")
 
 # 1. more explore ------------------------
 # schools in DBN_low_proficiency and school_low_incomes are quiet similar. 
-# there is just one school, 13K305, is not in DBN_low_proficiency, because school_demographic doesn't have 13K305's data
+# there is just one school, 13K305, not in DBN_low_proficiency, because school_demographic doesn't have 13K305's data
 # descriptive information on this school could be gathered to determine whether to put it on the list
 DBN_low_proficiency$DBN[!(DBN_low_proficiency$DBN %in% school_low_incomes$DBN)]
 
